@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producción - Residencial Magna</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#F5F7FA;
+color:#1B3765;
+}
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+}
+
+header{
+background:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+header a{
+text-decoration:none;
+color:#1B3765;
+font-weight:500;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:2rem;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+max-width:500px;
+margin:auto;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+input, select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#F4A62A;
+color:#1B3765;
+padding:12px;
+border:none;
+border-radius:5px;
+width:100%;
+font-weight:600;
+cursor:pointer;
+}
+
+footer{
+background:#1B3765;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>Residencial Magna</h2>
+<a href="index.html">← Volver</a>
+</header>
+
+<section class="section">
+
+<h2 class="section-title">Sobre nuestra producción</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Especificación del servicio</h3>
+<p>Residencial Magna ofrece alojamiento seguro, cómodo y enfocado en el desarrollo académico de estudiantes.</p>
+</div>
+
+<div class="card">
+<h3>Tecnología utilizada</h3>
+<p>Uso de WiFi de alta velocidad, sistemas de seguridad y herramientas digitales para la administración.</p>
+</div>
+
+<div class="card">
+<h3>Mantenimiento</h3>
+<p>Mantenimiento preventivo y correctivo en instalaciones, mobiliario y áreas comunes.</p>
+</div>
+
+<div class="card">
+<h3>Proceso del servicio</h3>
+<p>Solicitud → Asignación → Ingreso → Uso de servicios → Supervisión continua.</p>
+</div>
+
+<div class="card">
+<h3>Mano de obra</h3>
+<p>Personal administrativo, mantenimiento, cocina y limpieza.</p>
+</div>
+
+<div class="card">
+<h3>Mejora continua</h3>
+<p>Se toman opiniones de residentes para mejorar constantemente el servicio.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- VACANTES -->
+
+<section class="section">
+
+<h2 class="section-title">Bolsa de trabajo</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Vacantes disponibles</h3>
+<ul>
+<li>Secretario/a</li>
+<li>Cocinero/a de comedor</li>
+<li>Personal de mantenimiento</li>
+<li>Personal de limpieza</li>
+<li>Apoyo administrativo</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Requisitos generales</h3>
+<ul>
+<li>Responsabilidad</li>
+<li>Trabajo en equipo</li>
+<li>Disponibilidad de horario</li>
+<li>Actitud de servicio</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- FORMULARIO -->
+
+<section class="section">
+
+<h2 class="section-title">Postúlate</h2>
+
+<form action="mailto:residencialmagna@gmail.com" method="post" enctype="text/plain">
+
+<input type="text" name="Nombre" placeholder="Nombre completo" required>
+
+<input type="number" name="Edad" placeholder="Edad" required>
+
+<select name="Estudios" required>
+<option value="">Grado de estudios</option>
+<option>Secundaria</option>
+<option>Preparatoria</option>
+<option>Universidad</option>
+<option>Otro</option>
+</select>
+
+<select name="Vacante" required>
+<option value="">Vacante de interés</option>
+<option>Secretario/a</option>
+<option>Cocinero/a</option>
+<option>Mantenimiento</option>
+<option>Limpieza</option>
+<option>Administrativo</option>
+</select>
+
+<button type="submit">Enviar solicitud</button>
+
+</form>
+
+</section>
+
+<footer>
+© 2026 Residencial Magna
+</footer>
+
+</body>
+</html>
+
