@@ -9,65 +9,23 @@
 
 <style>
 
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#F5F7FA;
-color:#1B3765;
-}
+body{margin:0;font-family:'Poppins',sans-serif;background:#F5F7FA;color:#1B3765;}
+h1,h2,h3{font-family:'Playfair Display',serif;}
 
-h1,h2,h3{
-font-family:'Playfair Display',serif;
-}
+header{background:white;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+header img{width:150px;}
 
-/* HEADER */
-
-header{
-background:white;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 8px rgba(0,0,0,0.05);
-}
-
-header img{
-width:150px;
-}
-
-nav a{
-color:#1B3765;
-margin-left:25px;
-text-decoration:none;
-font-weight:500;
-font-size:0.95rem;
-}
-
-nav a:hover{
-color:#F4A62A;
-}
-
-/* HERO */
+nav a{color:#1B3765;margin-left:25px;text-decoration:none;font-weight:500;font-size:0.95rem;}
+nav a:hover{color:#F4A62A;}
 
 .hero{
 background:linear-gradient(rgba(27,55,101,0.85),rgba(27,55,101,0.85)),
-url('imagenes/edificio.jpg') center/cover no-repeat;
-height:75vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
+url('edificio.jpg') center/cover no-repeat;
+height:75vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white;
 }
 
-.hero h1{
-font-size:3rem;
-}
-
-.hero p{
-font-size:1.2rem;
-margin:20px 0;
-}
+.hero h1{font-size:3rem;}
+.hero p{font-size:1.2rem;margin:20px 0;}
 
 .btn-primary{
 background:#F4A62A;
@@ -76,118 +34,33 @@ padding:14px 30px;
 border-radius:5px;
 text-decoration:none;
 font-weight:600;
+display:inline-block;
+margin:5px;
 }
 
-/* SECTIONS */
+.section{padding:80px 10%;}
+.section-title{text-align:center;margin-bottom:40px;font-size:2rem;}
 
-.section{
-padding:80px 10%;
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;}
 
-.section-title{
-text-align:center;
-margin-bottom:40px;
-font-size:2rem;
-}
+.card{background:white;padding:25px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);}
 
-/* GRID */
+.rooms{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;}
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+.room-card{background:white;width:320px;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);}
+.room-card img{width:100%;height:200px;object-fit:cover;}
+.room-info{padding:25px;}
+.price{font-size:1.4rem;font-weight:600;}
 
-/* CARDS */
+.service-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;text-align:center;}
+.service-item{padding:20px;background:white;border-radius:8px;}
 
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.06);
-}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:25px;text-align:center;}
+.team img{width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:10px;}
 
-/* ROOMS */
+iframe{width:100%;height:400px;border-radius:12px;border:0;}
 
-.rooms{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.room-card{
-background:white;
-width:320px;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.room-card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.room-info{
-padding:25px;
-}
-
-.price{
-font-size:1.4rem;
-font-weight:600;
-}
-
-/* SERVICIOS */
-
-.service-list{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-text-align:center;
-}
-
-.service-item{
-padding:20px;
-background:white;
-border-radius:8px;
-}
-
-/* COLABORADORES */
-
-.team{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-gap:25px;
-text-align:center;
-}
-
-.team img{
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-margin-bottom:10px;
-}
-
-/* MAP */
-
-iframe{
-width:100%;
-height:400px;
-border-radius:12px;
-border:0;
-}
-
-/* FOOTER */
-
-footer{
-background:#1B3765;
-color:white;
-text-align:center;
-padding:25px;
-}
+footer{background:#1B3765;color:white;text-align:center;padding:25px;}
 
 </style>
 </head>
@@ -195,7 +68,6 @@ padding:25px;
 <body>
 
 <header>
-
 <img src="logo.png">
 
 <nav>
@@ -203,8 +75,8 @@ padding:25px;
 <a href="#habitaciones">Habitaciones</a>
 <a href="#servicios">Servicios</a>
 <a href="#ubicacion">Ubicación</a>
-<a href="#colaboradores">Colaboradores</a>
 <a href="#contacto">Contacto</a>
+<a href="produccion.html">Producción</a>
 </nav>
 
 </header>
@@ -213,18 +85,18 @@ padding:25px;
 <div>
 <h1>Residencial Magna</h1>
 <p>Un entorno seguro y moderno diseñado para el desarrollo académico.</p>
+
 <a href="#habitaciones" class="btn-primary">Conocer Habitaciones</a>
+<a href="produccion.html" class="btn-primary">Sobre nuestra producción</a>
+
 </div>
 </section>
 
 <section id="empresa" class="section">
-
 <h2 class="section-title">Descripción de la empresa</h2>
-
 <div class="card">
-Residencial Magna es un proyecto enfocado en ofrecer alojamiento cómodo, seguro y accesible para estudiantes universitarios, brindando espacios adecuados para el estudio y la convivencia.
+Residencial Magna es un proyecto enfocado en ofrecer alojamiento cómodo, seguro y accesible para estudiantes universitarios.
 </div>
-
 </section>
 
 <section class="section">
@@ -262,7 +134,7 @@ Brindar hospedaje accesible y crear un ambiente que apoye el desarrollo académi
 <img src="estudio.jpg">
 <div class="room-info">
 <h3>Habitación Individual</h3>
-<p>Espacio privado para descanso y estudio.</p>
+<p>Espacio privado ideal para estudio y descanso.</p>
 <div class="price">$3500 MXN / mes</div>
 </div>
 </div>
@@ -271,8 +143,42 @@ Brindar hospedaje accesible y crear un ambiente que apoye el desarrollo académi
 <img src="edificio.jpg">
 <div class="room-info">
 <h3>Habitación Compartida</h3>
-<p>Alternativa funcional y accesible.</p>
+<p>Alternativa económica sin perder comodidad.</p>
 <div class="price">$2000 MXN / mes</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Servicios adicionales</h2>
+
+<div class="rooms">
+
+<div class="room-card">
+<div class="room-info">
+<h3>Estacionamiento</h3>
+<p>Guarda tu vehículo con seguridad 24/7 dentro de Residencial Magna.</p>
+<div class="price">$500 MXN / mes</div>
+</div>
+</div>
+
+<div class="room-card">
+<div class="room-info">
+<h3>Servicio de comedor</h3>
+<p>Incluye desayuno, comida y cena de lunes a sábado.</p>
+<div class="price">$1200 MXN / mes</div>
+</div>
+</div>
+
+<div class="room-card">
+<div class="room-info">
+<h3>Limpieza de habitación</h3>
+<p>Limpieza profunda periódica para mantener tu espacio impecable.</p>
+<div class="price">$300 MXN / mes</div>
 </div>
 </div>
 
@@ -303,109 +209,34 @@ Brindar hospedaje accesible y crear un ambiente que apoye el desarrollo académi
 
 </section>
 
+<section id="contacto" class="section">
+
+<h2 class="section-title">Contacto</h2>
+
+<p style="text-align:center;">Teléfono: 661 110 2647</p>
+
+<div style="text-align:center;margin-top:20px;">
+<a href="https://wa.me/526611102647" class="btn-primary">
+Contactar por WhatsApp
+</a>
+</div>
+
+</section>
+
 <section id="colaboradores" class="section">
 
 <h2 class="section-title">Colaboradores</h2>
 
 <div class="team">
 
-<div>
-<img src="colaborador1.jpeg">
-<p>Josue Bautista</p>
-</div>
-
-<div>
-<img src="colaborador2.jpeg">
-<p>Omar Donato</p>
-</div>
-
-<div>
-<img src="colaborador3.jpeg">
-<p>Enrique Rodriguez</p>
-</div>
-
-<div>
-<img src="colaborador4.jpeg">
-<p>Salvador Garcia</p>
-</div>
-
-<div>
-<img src="colaborador5.jpeg">
-<p>Arael Vazquez</p>
-</div>
-
-<div>
-<img src="colaborador6.jpeg">
-<p>Camila Moreno</p>
-</div>
-
-<div>
-<img src="colaborador7.jpeg">
-<p>Alexis Segundo</p>
-</div>
-
-<div>
-<img src="colaborador8.jpeg">
-<p>Henry Espinosa</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">Instagram</h2>
-
-<div style="text-align:center;">
-<a class="btn-primary" href="https://www.instagram.com/residencialmagna_?utm_source=ig_web_button_share_sheet" target="_blank">
-Visitar Instagram
-</a>
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">Video Publicitario</h2>
-
-<div style="text-align:center;">
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/uE7msajAopc"
-allowfullscreen>
-</iframe>
-</div>
-
-</section>
-
-<section class="section">
-
-<h2 class="section-title">Spot de Radio</h2>
-
-<div style="text-align:center;">
-
-<audio controls>
-<source src="Audio de Arael.oga" type="audio/ogg">
-Tu navegador no soporta audio.
-</audio>
-
-</div>
-
-</section>
-
-<section id="contacto" class="section">
-
-<h2 class="section-title">Contacto</h2>
-
-<p style="text-align:center;">Solicita información sobre disponibilidad.</p>
-
-<div style="text-align:center;margin-top:20px;">
-
-<p>Teléfono: 661 110 2647</p>
-
-<a href="https://wa.me/526611102647" class="btn-primary">
-Contactar por WhatsApp
-</a>
+<div><img src="colaborador1.jpeg"><p>Josue Bautista</p></div>
+<div><img src="colaborador2.jpeg"><p>Omar Donato</p></div>
+<div><img src="colaborador3.jpeg"><p>Enrique Rodriguez</p></div>
+<div><img src="colaborador4.jpeg"><p>Salvador Garcia</p></div>
+<div><img src="colaborador5.jpeg"><p>Arael Vazquez</p></div>
+<div><img src="colaborador6.jpeg"><p>Camila Moreno</p></div>
+<div><img src="colaborador7.jpeg"><p>Alexis Segundo</p></div>
+<div><img src="colaborador8.jpeg"><p>Henry Espinosa</p></div>
 
 </div>
 
@@ -416,6 +247,7 @@ Contactar por WhatsApp
 </footer>
 
 </body>
+</html>
 </html>
 
 
