@@ -9,16 +9,8 @@
 
 <style>
 
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:#F5F7FA;
-color:#1B3765;
-}
-
-h1,h2,h3{
-font-family:'Playfair Display',serif;
-}
+body{margin:0;font-family:'Poppins',sans-serif;background:#F5F7FA;color:#1B3765;}
+h1,h2,h3{font-family:'Playfair Display',serif;}
 
 header{
 background:white;
@@ -29,33 +21,56 @@ align-items:center;
 box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
-header a{
-text-decoration:none;
+header img{width:150px;}
+
+nav a{
 color:#1B3765;
+margin-left:25px;
+text-decoration:none;
 font-weight:500;
+font-size:0.95rem;
 }
 
-.section{
-padding:80px 10%;
-}
+nav a:hover{color:#F4A62A;}
 
-.section-title{
+.hero{
+background:linear-gradient(rgba(27,55,101,0.85),rgba(27,55,101,0.85)),
+url('edificio.jpg') center/cover no-repeat;
+height:50vh;
+display:flex;
+align-items:center;
+justify-content:center;
 text-align:center;
-margin-bottom:40px;
-font-size:2rem;
+color:white;
+}
+
+.btn-primary{
+background:#F4A62A;
+color:#1B3765;
+padding:14px 30px;
+border-radius:5px;
+text-decoration:none;
+font-weight:600;
+display:inline-block;
+margin-top:10px;
+}
+
+.section{padding:80px 10%;}
+.section-title{text-align:center;margin-bottom:40px;font-size:2rem;}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+max-width:900px;
+margin:auto;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.06);
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
 form{
@@ -67,7 +82,7 @@ margin:auto;
 box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
 
-input, select{
+input, select, textarea{
 width:100%;
 padding:12px;
 margin:10px 0;
@@ -91,7 +106,6 @@ background:#1B3765;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:40px;
 }
 
 </style>
@@ -100,46 +114,108 @@ margin-top:40px;
 <body>
 
 <header>
-<h2>Residencial Magna</h2>
-<a href="index.html">← Volver</a>
+
+<img src="logo.png">
+
+<nav>
+<a href="index.html">Inicio</a>
+<a href="index.html#habitaciones">Habitaciones</a>
+<a href="index.html#servicios">Servicios</a>
+<a href="index.html#contacto">Contacto</a>
+</nav>
+
 </header>
+
+<!-- HERO -->
+
+<section class="hero">
+<div>
+<h1>Producción del Servicio</h1>
+<p>Cómo funciona Residencial Magna por dentro</p>
+</div>
+</section>
+
+<!-- ESPECIFICACIÓN -->
 
 <section class="section">
 
-<h2 class="section-title">Sobre nuestra producción</h2>
-
-<div class="grid">
+<h2 class="section-title">Especificación del servicio</h2>
 
 <div class="card">
-<h3>Especificación del servicio</h3>
-<p>Residencial Magna ofrece alojamiento seguro, cómodo y enfocado en el desarrollo académico de estudiantes.</p>
+<p>
+Residencial Magna ofrece alojamiento estudiantil enfocado en brindar comodidad, seguridad y un entorno académico adecuado.
+El servicio incluye habitaciones individuales y compartidas, acceso a internet, áreas comunes, seguridad constante y servicios adicionales opcionales.
+</p>
 </div>
+
+</section>
+
+<!-- TECNOLOGÍA -->
+
+<section class="section">
+
+<h2 class="section-title">Tecnología utilizada</h2>
 
 <div class="card">
-<h3>Tecnología utilizada</h3>
-<p>Uso de WiFi de alta velocidad, sistemas de seguridad y herramientas digitales para la administración.</p>
+<p>
+Para operar correctamente, Residencial Magna utiliza herramientas tecnológicas como WiFi de alta velocidad, comunicación digital mediante redes sociales y WhatsApp, así como sistemas básicos de control para la administración de residentes y servicios.
+</p>
 </div>
+
+</section>
+
+<!-- MANTENIMIENTO -->
+
+<section class="section">
+
+<h2 class="section-title">Mantenimiento del servicio</h2>
 
 <div class="card">
-<h3>Mantenimiento</h3>
-<p>Mantenimiento preventivo y correctivo en instalaciones, mobiliario y áreas comunes.</p>
+<p>
+Se implementa mantenimiento preventivo mediante limpieza constante, revisión de instalaciones y monitoreo de equipos.
+El mantenimiento correctivo se aplica cuando se detectan fallas, garantizando que las instalaciones siempre estén en condiciones óptimas.
+</p>
 </div>
+
+</section>
+
+<!-- PROCESO -->
+
+<section class="section">
+
+<h2 class="section-title">Proceso del servicio</h2>
 
 <div class="card">
-<h3>Proceso del servicio</h3>
-<p>Solicitud → Asignación → Ingreso → Uso de servicios → Supervisión continua.</p>
+<p>
+El proceso inicia cuando el estudiante solicita información, seguido del registro, asignación de habitación, ingreso al residencial y uso de los servicios.
+Durante su estancia, se realiza supervisión continua para asegurar calidad y satisfacción.
+</p>
 </div>
+
+</section>
+
+<!-- DIAGRAMA -->
+
+<section class="section">
+
+<h2 class="section-title">Diagrama del proceso</h2>
+
+<div style="text-align:center;">
+<img src="diagramaproduccion.png" style="max-width:100%;border-radius:10px;">
+</div>
+
+</section>
+
+<!-- MANO DE OBRA -->
+
+<section class="section">
+
+<h2 class="section-title">Mano de obra requerida</h2>
 
 <div class="card">
-<h3>Mano de obra</h3>
-<p>Personal administrativo, mantenimiento, cocina y limpieza.</p>
-</div>
-
-<div class="card">
-<h3>Mejora continua</h3>
-<p>Se toman opiniones de residentes para mejorar constantemente el servicio.</p>
-</div>
-
+<p>
+El funcionamiento del residencial requiere personal en distintas áreas como administración, cocina, mantenimiento y limpieza, quienes trabajan en conjunto para ofrecer un servicio eficiente.
+</p>
 </div>
 
 </section>
@@ -156,20 +232,20 @@ margin-top:40px;
 <h3>Vacantes disponibles</h3>
 <ul>
 <li>Secretario/a</li>
-<li>Cocinero/a de comedor</li>
-<li>Personal de mantenimiento</li>
-<li>Personal de limpieza</li>
+<li>Cocinero/a</li>
+<li>Mantenimiento</li>
+<li>Limpieza</li>
 <li>Apoyo administrativo</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Requisitos generales</h3>
+<h3>Requisitos</h3>
 <ul>
 <li>Responsabilidad</li>
 <li>Trabajo en equipo</li>
-<li>Disponibilidad de horario</li>
 <li>Actitud de servicio</li>
+<li>Disponibilidad de horario</li>
 </ul>
 </div>
 
@@ -183,7 +259,7 @@ margin-top:40px;
 
 <h2 class="section-title">Postúlate</h2>
 
-<form action="mailto:residencialmagna@gmail.com" method="post" enctype="text/plain">
+<form action="mailto:residencialmagnaoficial@gmail.com" method="post" enctype="text/plain">
 
 <input type="text" name="Nombre" placeholder="Nombre completo" required>
 
@@ -198,7 +274,7 @@ margin-top:40px;
 </select>
 
 <select name="Vacante" required>
-<option value="">Vacante de interés</option>
+<option value="">Vacante</option>
 <option>Secretario/a</option>
 <option>Cocinero/a</option>
 <option>Mantenimiento</option>
@@ -212,10 +288,31 @@ margin-top:40px;
 
 </section>
 
+<!-- MEJORA CONTINUA -->
+
+<section class="section">
+
+<h2 class="section-title">Mejora continua</h2>
+
+<div class="card">
+<p>Queremos mejorar constantemente. Envíanos tus sugerencias:</p>
+</div>
+
+<br>
+
+<form action="mailto:residencialmagnaoficial@gmail.com" method="post" enctype="text/plain">
+
+<textarea name="Sugerencia" placeholder="Escribe tu sugerencia..." required></textarea>
+
+<button type="submit">Enviar sugerencia</button>
+
+</form>
+
+</section>
+
 <footer>
-© 2026 Residencial Magna
+© 2026 Residencial Magna · Todos los derechos reservados
 </footer>
 
 </body>
 </html>
-
