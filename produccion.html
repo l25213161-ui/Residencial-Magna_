@@ -46,24 +46,25 @@ color:white;
 
 .card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
 box-shadow:0 6px 18px rgba(0,0,0,0.06);
-max-width:900px;
-margin:auto;
+text-align:center;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
 }
 
 form{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:10px;
-max-width:500px;
+max-width:450px;
 margin:auto;
 box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
@@ -110,83 +111,129 @@ padding:25px;
 </nav>
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 <div>
 <h1>Producción del Servicio</h1>
-<p>Funcionamiento interno de Residencial Magna</p>
+<p>Cómo funciona Residencial Magna</p>
 </div>
 </section>
 
+<!-- SERVICIO -->
+
 <section class="section">
-<h2 class="section-title">Especificación del servicio</h2>
+<h2 class="section-title">Servicio</h2>
+
 <div class="card">
 <p>
-Residencial Magna ofrece un servicio de alojamiento estudiantil diseñado para brindar seguridad, comodidad y un entorno académico adecuado.
-Incluye habitaciones, internet, áreas comunes y servicios adicionales.
+Residencial Magna ofrece alojamiento estudiantil con habitaciones cómodas,
+internet, seguridad y espacios comunes.
+El objetivo es brindar un entorno seguro y adecuado para el desarrollo académico.
 </p>
 </div>
 </section>
 
+<!-- TECNOLOGÍA -->
+
 <section class="section">
-<h2 class="section-title">Tecnología utilizada</h2>
+<h2 class="section-title">Tecnología</h2>
+
 <div class="card">
 <p>
-Se utilizan herramientas como WiFi, comunicación digital, sistemas administrativos y cámaras de seguridad.
+Se utiliza WiFi de alta velocidad, comunicación digital y registros básicos para administración.
+Además, se cuenta con cámaras de vigilancia y control de acceso para mayor seguridad.
 </p>
 </div>
 </section>
 
+<!-- OPERACIÓN -->
+
 <section class="section">
-<h2 class="section-title">Programa de operación del servicio</h2>
+<h2 class="section-title">Operación del servicio</h2>
+
 <div class="card">
 <p>
-El servicio opera todo el año. Se realizan actividades diarias, semanales y mensuales de limpieza, mantenimiento y supervisión.
+El servicio opera todo el año con actividades organizadas:
+diariamente se realiza limpieza y atención,
+semanalmente mantenimiento general,
+y mensualmente revisiones más completas para asegurar calidad.
 </p>
 </div>
 </section>
 
+<!-- RECURSOS -->
+
 <section class="section">
-<h2 class="section-title">Recursos del servicio</h2>
+<h2 class="section-title">Recursos</h2>
+
 <div class="card">
 <p>
-Se utilizan recursos como mobiliario, servicios básicos y productos de limpieza para garantizar calidad.
+Se utilizan muebles como camas, escritorios y closets,
+además de servicios básicos como agua, luz e internet.
+También se emplean productos de limpieza para mantener el lugar en óptimas condiciones.
 </p>
 </div>
 </section>
+
+<!-- MANTENIMIENTO -->
 
 <section class="section">
 <h2 class="section-title">Mantenimiento</h2>
+
+<div class="grid">
+
 <div class="card">
+<h3>Preventivo</h3>
 <p>
-Se aplica mantenimiento preventivo y correctivo para mantener en óptimas condiciones las instalaciones.
+Limpieza constante y revisiones periódicas de instalaciones y mobiliario.
+Se realiza de forma diaria, semanal y mensual para evitar fallas.
 </p>
 </div>
+
+<div class="card">
+<h3>Correctivo</h3>
+<p>
+Reparación inmediata de fallas como problemas eléctricos, fugas o daños en equipos,
+asegurando el funcionamiento continuo del servicio.
+</p>
+</div>
+
+</div>
+
 </section>
 
-<section class="section">
-<h2 class="section-title">Proceso del servicio</h2>
-<div class="card">
-<p>
-Promoción → Atención → Registro → Asignación → Estancia → Supervisión → Salida.
-</p>
-</div>
-</section>
+<!-- DIAGRAMA -->
 
 <section class="section">
 <h2 class="section-title">Diagrama del proceso</h2>
+
+<p style="text-align:center; margin-bottom:20px;">
+El siguiente diagrama representa el proceso completo del servicio.
+</p>
+
 <div style="text-align:center;">
 <img src="diagramaproduccion.png" style="max-width:100%;border-radius:10px;">
 </div>
+
 </section>
 
+<!-- PERSONAL -->
+
 <section class="section">
-<h2 class="section-title">Mano de obra requerida</h2>
+<h2 class="section-title">Mano de obra</h2>
+
 <div class="card">
 <p>
-Personal en áreas de administración, mantenimiento, limpieza y cocina para garantizar el servicio.
+El servicio requiere personal en administración, recepción, limpieza, mantenimiento,
+cocina y seguridad. Cada área cumple funciones específicas para garantizar
+un servicio eficiente y de calidad.
 </p>
 </div>
+
 </section>
+
+<!-- VACANTES -->
 
 <section class="section">
 <h2 class="section-title">Bolsa de trabajo</h2>
@@ -200,7 +247,6 @@ Personal en áreas de administración, mantenimiento, limpieza y cocina para gar
 <li>Cocinero/a</li>
 <li>Mantenimiento</li>
 <li>Limpieza</li>
-<li>Administrativo</li>
 </ul>
 </div>
 
@@ -214,7 +260,10 @@ Personal en áreas de administración, mantenimiento, limpieza y cocina para gar
 </div>
 
 </div>
+
 </section>
+
+<!-- FORMULARIO -->
 
 <section class="section">
 <h2 class="section-title">Postúlate</h2>
@@ -229,7 +278,6 @@ Personal en áreas de administración, mantenimiento, limpieza y cocina para gar
 <option>Secundaria</option>
 <option>Preparatoria</option>
 <option>Universidad</option>
-<option>Otro</option>
 </select>
 
 <select name="Vacante" required>
@@ -238,30 +286,24 @@ Personal en áreas de administración, mantenimiento, limpieza y cocina para gar
 <option>Cocinero/a</option>
 <option>Mantenimiento</option>
 <option>Limpieza</option>
-<option>Administrativo</option>
 </select>
 
 <button type="submit">Enviar solicitud</button>
 
 </form>
+
 </section>
 
+<!-- OPINIÓN -->
+
 <section class="section">
-<h2 class="section-title">Mejora continua</h2>
-
-<div class="card">
-<p>
-Se recopilan sugerencias de residentes para mejorar continuamente el servicio.
-</p>
-</div>
-
-<br>
+<h2 class="section-title">Tu opinión nos importa</h2>
 
 <form action="mailto:residencialmagnaoficial@gmail.com" method="post" enctype="text/plain">
 
-<textarea name="Sugerencia" placeholder="Escribe tu sugerencia..." required></textarea>
+<textarea name="Sugerencia" placeholder="Escribe tu opinión..." required></textarea>
 
-<button type="submit">Enviar sugerencia</button>
+<button type="submit">Enviar</button>
 
 </form>
 
