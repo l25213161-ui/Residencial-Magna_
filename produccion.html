@@ -9,7 +9,7 @@
 
 <style>
 
-body{margin:0;font-family:'Poppins',sans-serif;background:#F5F7FA;color:#1B3765;}
+body{margin:0;font-family:'Poppins',sans-serif;background:#F5F7FA;color:#1B3765;text-align:center;}
 h1,h2,h3{font-family:'Playfair Display',serif;}
 
 header{
@@ -37,34 +37,34 @@ height:50vh;
 display:flex;
 align-items:center;
 justify-content:center;
-text-align:center;
 color:white;
 }
 
 .section{padding:80px 10%;}
-.section-title{text-align:center;margin-bottom:40px;font-size:2rem;}
+.section-title{margin-bottom:40px;font-size:2rem;}
 
 .card{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:10px;
 box-shadow:0 6px 18px rgba(0,0,0,0.06);
-text-align:center;
+max-width:900px;
+margin:auto;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 max-width:1000px;
 margin:auto;
 }
 
 form{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:10px;
-max-width:450px;
+max-width:500px;
 margin:auto;
 box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
@@ -91,7 +91,6 @@ cursor:pointer;
 footer{
 background:#1B3765;
 color:white;
-text-align:center;
 padding:25px;
 }
 
@@ -112,72 +111,66 @@ padding:25px;
 </header>
 
 <!-- HERO -->
-
 <section class="hero">
 <div>
 <h1>Producción del Servicio</h1>
-<p>Cómo funciona Residencial Magna</p>
+<p>Funcionamiento interno de Residencial Magna</p>
 </div>
 </section>
 
-<!-- SERVICIO -->
-
+<!-- ESPECIFICACIÓN -->
 <section class="section">
-<h2 class="section-title">Servicio</h2>
+<h2 class="section-title">Especificación del servicio</h2>
 
 <div class="card">
 <p>
-Residencial Magna ofrece alojamiento estudiantil con habitaciones cómodas,
-internet, seguridad y espacios comunes.
-El objetivo es brindar un entorno seguro y adecuado para el desarrollo académico.
+Residencial Magna ofrece un servicio de alojamiento estudiantil enfocado en brindar seguridad, comodidad y un entorno adecuado para el desarrollo académico.
+Incluye habitaciones equipadas, acceso a internet, áreas comunes, vigilancia constante y servicios adicionales.
+Todo el servicio está diseñado para mejorar la calidad de vida del estudiante.
 </p>
 </div>
 </section>
 
 <!-- TECNOLOGÍA -->
-
 <section class="section">
-<h2 class="section-title">Tecnología</h2>
+<h2 class="section-title">Tecnología utilizada</h2>
 
 <div class="card">
 <p>
-Se utiliza WiFi de alta velocidad, comunicación digital y registros básicos para administración.
-Además, se cuenta con cámaras de vigilancia y control de acceso para mayor seguridad.
+Se emplea WiFi de alta velocidad en toda la residencia, comunicación digital mediante redes sociales y WhatsApp,
+y control administrativo básico con registros digitales.
+También se cuenta con cámaras de vigilancia y control de accesos para mayor seguridad.
 </p>
 </div>
 </section>
 
-<!-- OPERACIÓN -->
-
+<!-- PROGRAMA -->
 <section class="section">
-<h2 class="section-title">Operación del servicio</h2>
+<h2 class="section-title">Programa de operación</h2>
 
 <div class="card">
 <p>
-El servicio opera todo el año con actividades organizadas:
-diariamente se realiza limpieza y atención,
-semanalmente mantenimiento general,
-y mensualmente revisiones más completas para asegurar calidad.
+El servicio opera continuamente durante todo el año.
+Diariamente se realizan actividades como limpieza, atención al cliente y supervisión de seguridad.
+Semanalmente se llevan a cabo limpiezas profundas y revisión de instalaciones.
+Mensualmente se realiza mantenimiento preventivo general.
 </p>
 </div>
 </section>
 
 <!-- RECURSOS -->
-
 <section class="section">
-<h2 class="section-title">Recursos</h2>
+<h2 class="section-title">Recursos del servicio</h2>
 
 <div class="card">
 <p>
-Se utilizan muebles como camas, escritorios y closets,
-además de servicios básicos como agua, luz e internet.
-También se emplean productos de limpieza para mantener el lugar en óptimas condiciones.
+No se utiliza materia prima tradicional, pero sí recursos como mobiliario, servicios básicos (agua, luz, internet)
+y productos de limpieza, los cuales permiten garantizar un servicio funcional y de calidad.
 </p>
 </div>
 </section>
 
 <!-- MANTENIMIENTO -->
-
 <section class="section">
 <h2 class="section-title">Mantenimiento</h2>
 
@@ -186,67 +179,57 @@ También se emplean productos de limpieza para mantener el lugar en óptimas con
 <div class="card">
 <h3>Preventivo</h3>
 <p>
-Limpieza constante y revisiones periódicas de instalaciones y mobiliario.
-Se realiza de forma diaria, semanal y mensual para evitar fallas.
+Se realiza mediante limpieza constante, revisión de instalaciones eléctricas, hidráulicas y mobiliario.
+Permite evitar fallas y mantener el servicio en condiciones óptimas.
 </p>
 </div>
 
 <div class="card">
 <h3>Correctivo</h3>
 <p>
-Reparación inmediata de fallas como problemas eléctricos, fugas o daños en equipos,
-asegurando el funcionamiento continuo del servicio.
+Se aplica cuando ocurre una falla, solucionando problemas en electricidad, plomería o mobiliario.
+Su objetivo es restablecer rápidamente el funcionamiento del servicio.
 </p>
 </div>
 
 </div>
-
 </section>
 
 <!-- DIAGRAMA -->
-
 <section class="section">
 <h2 class="section-title">Diagrama del proceso</h2>
 
-<p style="text-align:center; margin-bottom:20px;">
-El siguiente diagrama representa el proceso completo del servicio.
-</p>
-
-<div style="text-align:center;">
-<img src="diagramaproduccion.png" style="max-width:100%;border-radius:10px;">
+<div>
+<img src="diagramaproduccion.png" style="max-width:90%;border-radius:10px;">
 </div>
-
 </section>
 
-<!-- PERSONAL -->
-
+<!-- MANO DE OBRA -->
 <section class="section">
-<h2 class="section-title">Mano de obra</h2>
+<h2 class="section-title">Mano de obra requerida</h2>
 
 <div class="card">
 <p>
-El servicio requiere personal en administración, recepción, limpieza, mantenimiento,
-cocina y seguridad. Cada área cumple funciones específicas para garantizar
-un servicio eficiente y de calidad.
+El servicio requiere personal en áreas como administración, recepción, mantenimiento, limpieza, cocina y seguridad.
+Cada área cumple funciones específicas que permiten ofrecer un servicio organizado, seguro y eficiente.
 </p>
 </div>
-
 </section>
 
 <!-- VACANTES -->
-
 <section class="section">
 <h2 class="section-title">Bolsa de trabajo</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Vacantes</h3>
+<h3>Vacantes disponibles</h3>
 <ul>
 <li>Secretario/a</li>
 <li>Cocinero/a</li>
 <li>Mantenimiento</li>
 <li>Limpieza</li>
+<li>Apoyo administrativo</li>
 </ul>
 </div>
 
@@ -256,19 +239,18 @@ un servicio eficiente y de calidad.
 <li>Responsabilidad</li>
 <li>Trabajo en equipo</li>
 <li>Actitud de servicio</li>
+<li>Disponibilidad de horario</li>
 </ul>
 </div>
 
 </div>
-
 </section>
 
-<!-- FORMULARIO -->
-
+<!-- FORMULARIO VACANTES -->
 <section class="section">
 <h2 class="section-title">Postúlate</h2>
 
-<form action="mailto:residencialmagnaoficial@gmail.com" method="post" enctype="text/plain">
+<form action="https://formsubmit.co/residencialmagnaoficial@gmail.com" method="POST">
 
 <input type="text" name="Nombre" placeholder="Nombre completo" required>
 <input type="number" name="Edad" placeholder="Edad" required>
@@ -278,6 +260,7 @@ un servicio eficiente y de calidad.
 <option>Secundaria</option>
 <option>Preparatoria</option>
 <option>Universidad</option>
+<option>Otro</option>
 </select>
 
 <select name="Vacante" required>
@@ -286,24 +269,27 @@ un servicio eficiente y de calidad.
 <option>Cocinero/a</option>
 <option>Mantenimiento</option>
 <option>Limpieza</option>
+<option>Administrativo</option>
 </select>
+
+<input type="hidden" name="_captcha" value="false">
 
 <button type="submit">Enviar solicitud</button>
 
 </form>
-
 </section>
 
 <!-- OPINIÓN -->
-
 <section class="section">
-<h2 class="section-title">Tu opinión nos importa</h2>
+<h2 class="section-title">En Residencial Magna nos interesa saber tu opinión</h2>
 
-<form action="mailto:residencialmagnaoficial@gmail.com" method="post" enctype="text/plain">
+<form action="https://formsubmit.co/residencialmagnaoficial@gmail.com" method="POST">
 
-<textarea name="Sugerencia" placeholder="Escribe tu opinión..." required></textarea>
+<textarea name="Sugerencia" placeholder="Escribe tu opinión o sugerencia..." required></textarea>
 
-<button type="submit">Enviar</button>
+<input type="hidden" name="_captcha" value="false">
+
+<button type="submit">Enviar opinión</button>
 
 </form>
 
